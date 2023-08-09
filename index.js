@@ -1,4 +1,5 @@
 require('dotenv').config();
+require('crypto');
 const { readFileSync } = require('fs');
 const { Web3 } = require("web3");
 const providerURL = `https://arb-mainnet.g.alchemy.com/v2/${process.env.alchemyid}`;
@@ -28,4 +29,6 @@ const getEvents = async () => {
   const averageGasUsed = totalGasUsed / gasUsed.length;
   console.log(averageGasUsed);
 }
+
+
 getEvents();
