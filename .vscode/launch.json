@@ -7,11 +7,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "fee estimation",
+      "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/fee_estimation.js"
+      "program": "${workspaceFolder}/index.js"
     }
   ]
 }
